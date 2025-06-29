@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
-title: "Margin"
+templateEngineOverride: njk,md
+title: "Webforge - Margin"
 ---
 
 # Margin
@@ -124,6 +125,13 @@ Lebih baik ditulis saja dengan:
 margin: 10px 20px 30px 40px;
 ```
 Dan jika kalian lupa urutan sisinya, kalian tinggal ingat dari atas, lalu berputar searah jarum jam.
+
+<br>
+
+{% navLeft "Div", "../div" %}
+{% navRight "Padding", "../padding" %}
+
+
 
 <style scoped>
 

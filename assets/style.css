@@ -14,7 +14,7 @@ html, body, main {
     margin: 0;
 }
 
-main {
+body {
     max-width: 800px;
     margin: auto;
     height: fit-content;
@@ -34,8 +34,22 @@ a:active {
     opacity: 0.5;
 }
 
+.nav {
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgb(36, 36, 44);
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.nav-arrow {
+    opacity: 0.5;
+    margin-left: 0.5rem;
+}
+
 @media screen and (max-width: 800px) {
-    main {
+    body {
         width: auto;
         padding: 1rem;
     }

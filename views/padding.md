@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
-title: "Padding"
+templateEngineOverride: njk,md
+title: "Webforge - Padding"
 ---
 
 # Padding
@@ -30,6 +31,9 @@ padding-left
 
 dan yang umum `padding`. Aturan penggunaannya juga persis dengan properti `margin`.
 
+<br>
+
+{% navLeft "Margin", "../margin" %}
 
 <style>
     .kotak {
