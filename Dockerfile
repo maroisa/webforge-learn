@@ -1,17 +1,13 @@
-FROM node:22-alpine as builder
-ENV PNPM_HOME="/pnpm"
-ENV COREPACK_INTEGRITY_KEYS=0
-ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable pnpm
+FROM denoland/deno:alpine as builder
 
 WORKDIR /app
 COPY package*.json .
 
-RUN pnpm install
+RUN deno install
 
 COPY . .
 
-RUN pnpm build
+RUN deno run build
 
 FROM nginx:1.29-alpine
 
